@@ -20,7 +20,6 @@ class ChooseAge extends React.Component {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div cx="s.choose-age">
                 <h1>Choose girls age</h1>
