@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: p.dist,
         filename: "[name].[hash].js",
-        publicPath: "/"
+        publicPath: "./"
     },
     plugins: [
         CleanWebpack,
