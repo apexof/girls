@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #e5e5e5;
+    font-family: sans-serif;
+}
+
+.page-container{
+    width: 100%;
+    padding: 43px 12px 50px;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-green {
+    background: #02B614;   
+}
+
+.btn-pink {
+    background: #E002BD;  
+}
+
+.btn {
+    cursor: pointer;  
+    border-radius: 10px;
+    height: 46px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 0;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    display: block;
+    text-decoration: none;
+}

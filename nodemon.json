@@ -1,0 +1,8 @@
+{
+    "watch": [
+        "./webpack.config.js",
+        "./webpack/",
+        "./babel.config.js",
+        "./common/"
+    ]
+}

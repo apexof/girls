@@ -1,0 +1,40 @@
+.choose-age {
+    margin: 27px 0 32px;
+    h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    form {
+    }
+    input {
+        width: 60px;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: Roboto;
+        color: #000000;
+        margin-right: 53px;  
+        border: 0;
+        border-bottom: 1px solid #000000;
+        outline: 0;  
+        text-align: center;   
+        box-sizing: border-box;
+    }
+
+    .input-desc {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        margin-right: 11px;
+    }
+    button {
+        width: 162px;
+        margin-top: 30px;
+    }
+}

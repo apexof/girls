@@ -1,0 +1,18 @@
+.girls-list {
+    .desc {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        text-align: center;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 14px 0 26px;
+        button, a {
+            width: 47%;
+        }        
+    }
+}

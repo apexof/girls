@@ -1,0 +1,42 @@
+.sponsored {
+    border-bottom: 1px dotted #717171;
+    border-top: 1px dotted #717171;
+    padding-top: 6px;
+    position: relative;
+    margin-top: 6px;
+    .searches {
+        position: absolute;
+        top: -7px;
+        background: #fff;
+        font-size: 10px;
+        padding-right: 5px;
+        color: #5e5e5e;
+    }
+    .ss-button {
+        text-decoration: none;
+        cursor: pointer;
+        border: 1px solid #5a83e3;
+        color: #3a71f2;
+        border-radius: 25px;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 4px 0;
+        text-align: center;
+        position: relative;
+        height: 22px;
+        margin-bottom: 2px;
+        display: block;
+        span {
+            text-transform: none;
+        }
+        img {
+            position: absolute;
+            right: 5px;
+            top: 1px;
+            height: 18px;
+            width: 18px;
+            fill: #fff;
+            stroke:blue;
+        }
+    }    
+}

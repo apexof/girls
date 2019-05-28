@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "backend/",
+        "common/",
+        "nodemon-srv.json",
+        "browserslistrc",
+        "package.json"
+    ]
+}
