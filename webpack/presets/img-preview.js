@@ -5,7 +5,7 @@ const path = require("path");
 const preset = {
     test: /\.(jpe?g|png|gif|svg)$/i,
     use: [
-        // "cache-loader",
+        "cache-loader",
         sqipLoader,
         urlLoader
     ],

@@ -6,6 +6,7 @@ module.exports = {
         polyfills: "./polyfills.legacy.js",
         main: p.src
     },
+    output: { publicPath: "/girls/" },
     mode: "production",
     watch: false,
     devtool: false,

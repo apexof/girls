@@ -4,6 +4,7 @@ const p = require("../../common/path");
 module.exports = {
     // devtool: "source-map",
     entry: { main: p.src },
+    output: { publicPath: "/" },
     mode: "development",
     watch: true,
     watchOptions: { ignored: /node_modules/ },

@@ -35,11 +35,11 @@ class GetWhatsUp extends React.Component {
                     <Header />
                     <PagesH1>{`${girl.name}, ${age} years old`}</PagesH1>
                     <Sponsored />
-                    <Timer />
                     <GirlPhoto img={girl.img} />
+                    <Timer />
                 </div>
 
-                <ContinueSearch girlId={this.nextGirlId()}>
+                <ContinueSearch header={false} girlId={this.nextGirlId()}>
                     <PinkBlock>
                         <div style={{ marginLeft: "10px" }}>CONTINUE SEARCH</div>
                     </PinkBlock>

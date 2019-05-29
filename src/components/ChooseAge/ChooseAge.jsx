@@ -1,17 +1,19 @@
 import { withRouter } from "react-router-dom";
+import ReactGA from "react-ga";
 import s from "./ChooseAge.scss";
 import g from "../App/App.scss";
 
 class ChooseAge extends React.Component {
     state = {
-        minAge: localStorage.minAge || null,
-        maxAge: localStorage.maxAge || null
+        minAge: localStorage.minAge || 18,
+        maxAge: localStorage.maxAge || 31
     };
 
     searchGirls = () => {
         localStorage.minAge = this.state.minAge;
         localStorage.maxAge = this.state.maxAge;
         localStorage.girls = "";
+        ReactGA.ga("send", "event", "button", "click", "Поиск");
         this.props.history.push("/girls");
     };
 

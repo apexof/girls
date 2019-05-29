@@ -1,3 +1,4 @@
+import ReactGA from "react-ga";
 import g from "../App/App.scss";
 import s from "./Timer.scss";
 
@@ -34,7 +35,10 @@ class Timer extends React.Component {
 
 
     renderTimer = () => (
-        <div cx="s.btn-wait g.btn g.btn-pink">
+        <div
+            onClick={() => ReactGA.ga("send", "event", "button", "click", "кнопка с каунтером")}
+            cx="s.btn-wait g.btn g.btn-pink"
+        >
             WAIT {this.state.time} SECONDS...
         </div>
     )
@@ -45,6 +49,7 @@ class Timer extends React.Component {
             href="https://www.google.com"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => ReactGA.ga("send", "event", "button", "click", "кнопка с каунтером")}
         >
             Ссылка
         </a>

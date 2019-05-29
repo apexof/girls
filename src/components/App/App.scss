@@ -9,6 +9,7 @@ body {
     background-color: #fff;
     color: #e5e5e5;
     font-family: sans-serif;
+    position: relative;
 }
 
 .page-container{
@@ -16,8 +17,7 @@ body {
     padding: 43px 12px 50px;
     box-sizing: border-box;
     max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+    margin: 0 auto;    
 }
 
 .btn-green {

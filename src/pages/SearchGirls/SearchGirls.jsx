@@ -1,11 +1,11 @@
 import Header from "../../components/Header/Header";
 import ContinueSearch from "../../templates/ContinueSearch/ContinueSearch";
 
-function Home() {
+function SearchGirls() {
     return (
-        <ContinueSearch>
+        <ContinueSearch type="list">
             <Header />
         </ContinueSearch>
     );
 }
-export default Home;
+export default SearchGirls;

@@ -55,7 +55,7 @@ class DetailGirl extends React.Component {
                     </Link>
                 </div>
 
-                <ContinueSearch girlId={this.nextGirlId()}>
+                <ContinueSearch header={false} type="profile" girlId={this.nextGirlId()}>
                     <PinkBlock>
                         <div style={{ marginLeft: "10px" }}>CONTINUE SEARCH</div>
                     </PinkBlock>

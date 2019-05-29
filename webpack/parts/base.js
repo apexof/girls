@@ -16,9 +16,9 @@ module.exports = {
         HtmlWebPack,
         ImageMin,
         MiniCssExtract,
-        Provide,
+        Provide
         // Manifest
-        HardSource
+        // HardSource
     ],
     stats: "errors-warnings",
     module: { rules: [js, img, imgPreview, css, scss] },

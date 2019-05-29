@@ -1,14 +1,11 @@
 import "./PinkBlock.scss";
 
-function PinkBlock({ children, style }) {
+function PinkBlock({ children }) {
     return (
-        <div {...style} cx="pink-block">{children}</div>
+        <div cx="pink-block">{children}</div>
     );
 }
 
-PinkBlock.propTypes = {
-    children: PropTypes.instanceOf(Object).isRequired,
-    style: PropTypes.instanceOf(Object)
-};
-PinkBlock.defaultProps = { style: {} };
+PinkBlock.propTypes = { children: PropTypes.instanceOf(Object).isRequired };
+
 export default PinkBlock;

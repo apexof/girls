@@ -1,4 +1,5 @@
 import { withRouter, Link } from "react-router-dom";
+import ReactGA from "react-ga";
 import girls from "../../girls-data/girls";
 import GirlPhoto from "../GirlPhoto/GirlPhoto";
 import s from "./GirlsList.scss";
@@ -12,7 +13,15 @@ class GirlsList extends React.Component {
     nextGirl = () => {
         const nextId = this.state.girlId + 1;
         const nextgirlId = girls[nextId] ? nextId : 0;
+        this.ga("next girl")();
         this.setState({ girlId: nextgirlId });
+    }
+
+    ga = name => () => {
+        if (this.props.type) {
+            const type = this.props.type === "list" ? name : `${name} внизу профиля телки`;
+            ReactGA.ga("send", "event", "button", "click", type);
+        }
     }
 
     render() {
@@ -48,6 +57,7 @@ class GirlsList extends React.Component {
                 </div>
                 <div cx="s.buttons">
                     <Link
+                        onClick={this.ga("whatsapp")}
                         to={`/girls/${id}`}
                         cx="g.btn g.btn-green"
                     >
@@ -72,8 +82,9 @@ function checkLS(min, max) {
 
 GirlsList.propTypes = {
     history: PropTypes.instanceOf(Object).isRequired,
-    girlId: PropTypes.number
+    girlId: PropTypes.number,
+    type: PropTypes.string
 };
-GirlsList.defaultProps = { girlId: 0 };
+GirlsList.defaultProps = { girlId: 0, type: null };
 
 export default withRouter(GirlsList);
